@@ -27,7 +27,7 @@ const buttons1 = [
 ];
 
 async function getAnek(mes, chId) {
-  const filePath = `anek${mes}.txt`;
+  const filePath = `./data/anek${mes}.txt`;
 
   try {
     const data = await fs.promises.readFile(filePath, 'utf-8');
@@ -43,8 +43,8 @@ async function getAnek(mes, chId) {
 
 async function getTask(mes, chId) {
   try {
-    const filePath = `${mes}.txt`;
-    const ansPath = `${mes}_ans.txt`;
+    const filePath = `./data/${mes}.txt`;
+    const ansPath = `./data/${mes}_ans.txt`;
 
     const data = await fs.promises.readFile(filePath, 'utf-8');
     await bot.sendMessage(chId, data);
