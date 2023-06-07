@@ -3,7 +3,7 @@ const fs = require('fs');
 
 // Вставьте здесь ваш токен бота
 const token = '5787512427:AAHNNjFr8PrznIXtUSSEQYSxiQrWzjbik9g';
-const N = 3; //Число задач
+const N = 10; //Число задач
 const M = 30; //Число анекдотов
 // Создаем экземпляр бота
 const bot = new TelegramBot(token, { polling: true });
